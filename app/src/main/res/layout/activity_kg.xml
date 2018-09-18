@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:weightSum="10">
+            <EditText
+                android:id="@+id/EditTextKg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:hint="Nhập vào Kg / lần cân"
+                android:inputType="number|numberDecimal|numberSigned" />
+            <Button
+                android:id="@+id/ButtonAdd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Thêm" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ListViewKg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Số Kg phải phao:"/>
+        <RadioGroup
+            android:id="@+id/RadioGroupPhao"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/id1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuẩn" />
+            <RadioButton
+                android:id="@+id/id2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tự động" />
+            <RadioButton
+                android:id="@+id/id3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lên" />
+            <RadioButton
+                android:id="@+id/id4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xuống" />
+            <RadioButton
+                android:id="@+id/id5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tự do" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linePhao"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:weightSum="10">
+            <EditText
+                android:id="@+id/EditTextPhao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:hint="Số Kg phải phao"
+                android:inputType="number|numberDecimal|numberSigned" />
+            <Button
+                android:id="@+id/ButtonPhao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Xong" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="trừ bì (số lần cân x số Kg)"/>
+        <LinearLayout
+            android:id="@+id/lineBi"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:weightSum="10">
+            <EditText
+                android:id="@+id/EditTextBi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:hint="Số lần cân / Bì"
+                android:inputType="number|numberDecimal|numberSigned" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:text="x"
+                android:textSize="24sp"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/EditTextBi2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:hint="Số Kg / Bì"
+                android:inputType="number|numberDecimal|numberSigned" />
+            <Button
+                android:id="@+id/ButtonBi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="trừ đi" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:weightSum="100"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/TextViewSum"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:textSize="25sp"
+                android:textColor="#ff2b2b"
+                android:text="Mã nguồn liên hệ: Lê MV"/>
+            <TextView
+                android:id="@+id/TextViewSC"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="21.3"
+                android:text="Gmail: mvinhle22@gmail.com"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/TextViewTP"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="21.3"
+                android:text="Outlook: mvinhle@outlook.com"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/TextViewTB"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="21.3"
+                android:text="SDT: 01256538112"
+                android:textSize="17sp"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Xong" />
+    <Button
+        android:id="@+id/ButtonRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Đặt lại phao" />
+    <Button
+        android:id="@+id/ButtonRB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Đặt lại bì" />
+</RelativeLayout>
+</ScrollView>
